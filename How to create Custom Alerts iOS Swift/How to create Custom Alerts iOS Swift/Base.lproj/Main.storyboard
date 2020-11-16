@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="How_to_create_Custom_Alerts_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="P68-TS-yxg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJY-e2-obT">
+                                <rect key="frame" x="142" y="781" width="130" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Explore"/>
+                                <connections>
+                                    <action selector="exploreButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="uq1-JG-dM3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P68-TS-yxg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5V7-7c-qtS"/>
+                            <constraint firstItem="P68-TS-yxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9JS-5r-4ME"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hJY-e2-obT" secondAttribute="bottom" constant="20" id="Ntl-eJ-Jn4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P68-TS-yxg" secondAttribute="trailing" id="W4b-Zq-mzs"/>
+                            <constraint firstAttribute="bottom" secondItem="P68-TS-yxg" secondAttribute="bottom" id="blG-Ab-Z0u"/>
+                            <constraint firstItem="hJY-e2-obT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxg-Pp-NwF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="90"/>
+        </scene>
+        <!--Explore View Controller-->
+        <scene sceneID="BYp-cc-dux">
+            <objects>
+                <viewController storyboardIdentifier="ExploreViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Xha-fU-L9G" customClass="ExploreViewController" customModule="How_to_create_Custom_Alerts_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZC-f9-81g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cx9-lA-Rrx">
+                                <rect key="frame" x="41.5" y="312" width="331" height="272"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nPC-qb-ZK1">
+                                        <rect key="frame" x="16" y="16" width="299" height="240"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a custom Alert View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObH-RQ-VTg">
+                                                <rect key="frame" x="0.0" y="0.0" width="299" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="lIW-by-4ta"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your custom Alert message. This will be a choice, you will have to either choose okay or cancel. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI9-Cp-tln">
+                                                <rect key="frame" x="0.0" y="96" width="299" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj4-T9-IQd">
+                                                <rect key="frame" x="0.0" y="173" width="299" height="1"/>
+                                                <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.20580051369863014" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="yf8-f2-cbg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-et-6AG">
+                                                <rect key="frame" x="0.0" y="190" width="299" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-A1-ryb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="50"/>
+                                                        <state key="normal" title="Okay"/>
+                                                        <connections>
+                                                            <action selector="alertActionMethod:" destination="Xha-fU-L9G" eventType="touchUpInside" id="8yK-1w-vFh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-rl-zHl">
+                                                        <rect key="frame" x="149.5" y="0.0" width="149.5" height="50"/>
+                                                        <state key="normal" title="Cancel"/>
+                                                        <connections>
+                                                            <action selector="alertActionMethod:" destination="Xha-fU-L9G" eventType="touchUpInside" id="1jv-OZ-Hbi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="b2t-WY-IHu"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nPC-qb-ZK1" secondAttribute="bottom" constant="16" id="Wc9-f6-Lxg"/>
+                                    <constraint firstItem="nPC-qb-ZK1" firstAttribute="top" secondItem="Cx9-lA-Rrx" secondAttribute="top" constant="16" id="iXD-dr-5DJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="nPC-qb-ZK1" secondAttribute="trailing" constant="16" id="lJ6-TD-4Ut"/>
+                                    <constraint firstItem="nPC-qb-ZK1" firstAttribute="leading" secondItem="Cx9-lA-Rrx" secondAttribute="leading" constant="16" id="ny4-BA-hT6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vbf-Rv-A70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.72771297089041098" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cx9-lA-Rrx" firstAttribute="centerX" secondItem="cZC-f9-81g" secondAttribute="centerX" id="7My-KS-0vk"/>
+                            <constraint firstItem="Cx9-lA-Rrx" firstAttribute="width" secondItem="cZC-f9-81g" secondAttribute="width" multiplier="0.8" id="DBX-ua-a0h"/>
+                            <constraint firstItem="Cx9-lA-Rrx" firstAttribute="centerY" secondItem="cZC-f9-81g" secondAttribute="centerY" id="Ynk-IO-nj8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contextView" destination="Cx9-lA-Rrx" id="wEV-zW-BAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3J-ne-6zA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgImage" width="2160" height="3840"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
